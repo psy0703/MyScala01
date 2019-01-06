@@ -2,7 +2,7 @@ package com.ng.chapter04
 
 import scala.io.StdIn
 
-object ifelseDemo {
+object ifelseExer {
 
   def main(args: Array[String]): Unit = {
     println("请输入a")
