@@ -27,9 +27,13 @@ object Exercise01 {
     }
 
     var sum3 = 0
-    for(i<- 1 to 100 if sum3 > 20){
+    var flag = true
+    for(i<- 1 to 100 if  flag == true){
        sum3 += i
+      if (sum3 > 20){
         println(i)
+        flag = false
+      }
       }
 
   }
