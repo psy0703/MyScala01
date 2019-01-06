@@ -1,9 +1,15 @@
-package com.ng.chapter04
+package com.ng.chap04
 
 import scala.io.StdIn
 
+/**
+  * 多重循环练习
+  */
 object MuiltWhileExec {
-
+/*
+统计三个班成绩情况，每个班有5名同学，求出各个班的平均分和所有班级的平均分[学生的成绩从键盘输入]。
+统计三个班及格人数，每个班有5名同学。
+ */
   var sum = 0 //所有班级总分
   var scoreSum : Int = 0; //每个班总分
   var num :Int = 0 //及格人数

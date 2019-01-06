@@ -1,4 +1,4 @@
-package com.ng.chapter04
+package com.ng.chap04
 
 import scala.io.StdIn
 
