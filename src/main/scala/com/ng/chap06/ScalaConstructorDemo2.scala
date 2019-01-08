@@ -17,6 +17,12 @@ object ScalaConstructorDemo2 {
     // 2. this(name : String) 辅助构造器被调用
     // 3. this(age: Int)
     // 4.
+    /*
+    Person4 主构造器
+    this(name : String) 辅助构造器被调用
+    this(age: Int)
+    p4.name=匿名 p4.age=10
+     */
 
     //val aaa = new AAA //ok
   }

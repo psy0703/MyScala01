@@ -6,7 +6,7 @@ package Exercises.d03
   */
 object Exer03 {
   def main(args: Array[String]): Unit = {
-    for ( i <- 0 to 10 reverse){
+    for ( i <- 0 to 10 reverse){ //reverse对集合内容进行翻转
       println( "i = " + i)
     }
   }

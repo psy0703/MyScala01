@@ -8,7 +8,8 @@ object Exer05 {
   def main(args: Array[String]): Unit = {
     val str = "Hello"
     var res:BigInt = 1L
-    for ( i <- 0 to (str.length - 1)){
+//    for ( i <- 0 to (str.length - 1)){
+    for ( i <- str ){
       println(str.charAt(i) + ":" + str.charAt(i).toLong)
       res *= str.charAt(i).toLong
     }

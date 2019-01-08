@@ -9,8 +9,22 @@ object Exer06 {
   def main(args: Array[String]): Unit = {
     val str = "Hello"
     var res : BigInt = 1
+    //推荐写法(最常见):对方式二的简化(c:Char)类型推断可以省略
     str.foreach( res *= _.toLong) //"_"表示集合中的每一个元素，此时类型为Char
 
     println("res = " + res)
+
+    //以上代码等价于
+    /*def f1(c:Char):Unit = {
+      res *= c.toLong
+    }
+    //str.foreach(f1(_))
+    str.foreach(f1)*/
+
+    //方式二：匿名函数
+    var res2 = 1L
+    str.foreach((c:Char) => {
+      res2 *= c.toLong
+    })
   }
 }

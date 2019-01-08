@@ -7,6 +7,7 @@ object Exer09 {
   •	  x^0= 1
   •	  x^n= 1/x^(-n) ,如果n是负数的话
   •	不得使用return语句
+  难点：确定函数的形式
    */
   def main(args: Array[String]): Unit = {
     println(f1(2,-2))
