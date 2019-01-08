@@ -1,5 +1,3 @@
-package com.ng;
-
 import java.util.LinkedList;
 import java.util.List;
 
