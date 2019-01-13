@@ -12,7 +12,6 @@ object TraitCreateSeq01 {
     E.. -->A.. --> B.. --> C.. --> D..--> F..
      */
     val ff = new FF
-
     println("==============================")
     /*
     E.. --> K.. --> A.. --> B.. --> C.. --> D..
