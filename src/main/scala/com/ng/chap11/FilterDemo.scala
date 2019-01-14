@@ -1,25 +1,23 @@
 package com.ng.chap11
 
+/**
+  * 	filter：将符合要求的数据(筛选)放置到新的集合中
+  */
 object FilterDemo {
-
   def main(args: Array[String]): Unit = {
-    val list = List(3,4,2,7,5)
-    def MyMin(num1:Int,num2:Int):Int={
-      num1 min num2
+    val names = List("Alice","Bob","Nike")
+    def startA(str:String):Boolean={
+      str.startsWith("A")
     }
+    val names2 = names.filter(startA)
+    println("names2 = " + names2)
 
-    println(list.reduceLeft(MyMin))
+    //exer
+    val nums = List(1,2,3,4,5,6)
+    def f1(n:Int):Boolean={
+      if(n % 2 == 0)true else false
+    }
+    val num2 = nums.filter(f1)
+    println("nums2 = " + num2)
   }
 }
-/*
-  override /*TraversableLike*/
-  def reduceLeft[B >: A](@deprecatedName('f) op: (B, A) => B): B =
-    if (isEmpty) throw new UnsupportedOperationException("empty.reduceLeft")
-    else tail.foldLeft[B](head)(op)
-
-  override /*IterableLike*/
-  def reduceRight[B >: A](op: (A, B) => B): B =
-    if (isEmpty) throw new UnsupportedOperationException("Nil.reduceRight")
-    else if (tail.isEmpty) head
-    else op(head, tail.reduceRight(op))
- */
