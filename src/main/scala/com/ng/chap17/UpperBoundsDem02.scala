@@ -17,19 +17,19 @@ object UpperBoundsDem02 {
 }
 
 
-class Earth { //Earth 类
+class Earth1 { //Earth 类
   def sound() { //方法
     println("地球 hello !")
   }
 }
 
-class Animal extends Earth { //动物类，是Earth子类
+class Animal1 extends Earth { //动物类，是Earth子类
   override def sound() = { //重写了Earth的方法sound()
     println("动物 sound")
   }
 }
 
-class Bird extends Animal { //鸟是Animal子类
+class Bird1 extends Animal { //鸟是Animal子类
   override def sound() = { //将Animal的方法重写
     println("鸟 sounds..")
   }
